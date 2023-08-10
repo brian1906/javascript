@@ -48,3 +48,76 @@ class Producto {
   ]
   console.log(productos)
   
+  const userAdmin ={
+    username: 'admin',
+    password: '1234',
+  };
+  function login(){
+    const username= prompt("Ingrese el usuario:");
+    const password= prompt("ingrese la contraseña");
+
+    console.log(username);
+    console.log(password);
+
+    if(username == userAdmin.username && password == userAdmin.password){
+        console.log("Logueado!");
+        return true;
+    }
+    else {
+      console.log("No logueado!")
+      return false;
+    }
+// const numeroAIterar = prompt('Mandale un numero rey');
+// const salir = Number(prompt('Que numero te gusta pa salir?'));
+
+// for (let i = 1; i <= Number(numeroAIterar); i++) {
+//   if (i % 2 === 0) {
+//     console.log(`
+//             El numero ${i} es par
+//         `);
+//   }
+
+//   if (i === salir) {
+//     console.log(i);
+//     break;
+//   }
+// }
+
+let intentos = 0;
+let numeroUsuario = Number(prompt('Que numero tiras?'));
+const numeroSecreto = 7;
+
+do {
+  if (numeroUsuario === numeroSecreto) {
+    console.log(`Epa!, le pegaste pa`);
+  } else {
+    numeroUsuario = Number(prompt('Ingresá otro numero'));
+  }
+
+  }
+  // const numeroAIterar = prompt('Mandale un numero rey');
+// const salir = Number(prompt('Que numero te gusta pa salir?'));
+
+// for (let i = 1; i <= Number(numeroAIterar); i++) {
+//   if (i % 2 === 0) {
+//     console.log(`
+//             El numero ${i} es par
+//         `);
+//   }
+
+//   if (i === salir) {
+//     console.log(i);
+//     break;
+//   }
+// }
+
+let intentos = 0;
+let numeroUsuario = Number(prompt('Que numero tiras?'));
+const numeroSecreto = 7;
+
+do {
+  if (numeroUsuario === numeroSecreto) {
+    console.log(`Epa!, le pegaste pa`);
+  } else {
+    numeroUsuario = Number(prompt('Ingresá otro numero'));
+  }
